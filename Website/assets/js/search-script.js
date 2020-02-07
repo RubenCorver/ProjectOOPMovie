@@ -1,26 +1,28 @@
 let key = "1d78fa8";
 let searchName = "";
 let searchMethod = "t";
+let check = false;
 
 function movieDisplay(movie) {
     console.log("movies", movie);
-    if (searchMethod == "s") {
-        movie.Search.forEach(item => {
-            console.log("Item",item);
-            let div = document.querySelector(".gift");
-            let movieTitle = item["Title"];
-            let movieImg = item["Poster"];
-            let movieYear = item["Year"];
-            div.innerHTML += `
+    let div = document.querySelector(".gift");
+
+
+    if (!movie["response"] == "False") {
+        if (searchMethod == "s") {
+            movie.Search.forEach(item => {
+                console.log("Item", item);
+
+                let movieTitle = item["Title"];
+                let movieImg = item["Poster"];
+                let movieYear = item["Year"];
+                div.innerHTML += `
             <div class="col-12 col-sm-6">
             <div class="gift__img col-12"><img src="${movieImg}">
                 <div class="gift__rating">${movieYear}</div>
             </div>
             <div class="gift__info col-12">
                 <h4 class="gift__name">${movieTitle}</h4>
-                <div class="gift__details">
-                    <p>Klein Beetje info over le film</p>
-                </div>
                 <div class="gift__bottom row">
                     <div class="gift__cta-wrap col-12"><a class="flux_cta gift__cta" target="_blank"
                         href="#">WatchNow!</a><a class="flux_cta gift__cta" target="_blank" href="#">Add To
@@ -28,12 +30,14 @@ function movieDisplay(movie) {
                     </div>
                 </div>
             </div>`
-        })
+            })
+        }
+        if (searchMethod == "t") {
+            console.log(movie["Title"]);
+        }
+    } else {
+        div.innerHTML = "No movies found!";
     }
-    if (searchMethod == "t") {
-        console.log(movie["Title"]);
-    }
-    
 
 }
 
@@ -44,7 +48,7 @@ function search() {
     searchName = input;
     searchMethod = "s";
     api()
-
+    check = true;
     console.log(input);
 }
 
@@ -55,7 +59,9 @@ function api() {
         return result.json();
     })
         .then(function (movies) {
-            movieDisplay(movies);
+            if(check == true){
+                movieDisplay(movies);
+            }
         })
         .catch(function (error) {
             console.error(error);
