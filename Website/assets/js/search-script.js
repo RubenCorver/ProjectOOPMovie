@@ -22,7 +22,7 @@ function movieDisplay(movie) {
                 <div class="gift__rating">${movieYear}</div>
             </div>
             <div class="gift__info col-12">
-                <h4 class="gift__name">${movieTitle}</h4>
+                <h4>${movieTitle}</h4>
                 <div class="gift__bottom row">
                     <div class="gift__cta-wrap col-12"><a class="flux_cta gift__cta" target="_blank"
                         href="#">WatchNow!</a><a class="flux_cta gift__cta" target="_blank" href="#">Add To
