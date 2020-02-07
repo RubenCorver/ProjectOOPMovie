@@ -8,15 +8,16 @@ function movieDisplay(movie) {
         movie.Search.forEach(item => {
             console.log("Item",item);
             let div = document.querySelector(".gift");
-            let filmTitle = item["Title"];
-            let filmImg = item["Poster"];
+            let movieTitle = item["Title"];
+            let movieImg = item["Poster"];
+            let movieYear = item["Year"];
             div.innerHTML += `
             <div class="col-12 col-sm-6">
-            <div class="gift__img col-12"><img src="${filmImg}">
-                <div class="gift__rating"></div>
+            <div class="gift__img col-12"><img src="${movieImg}">
+                <div class="gift__rating">${movieYear}</div>
             </div>
             <div class="gift__info col-12">
-                <h4 class="gift__name">${filmTitle}</h4>
+                <h4 class="gift__name">${movieTitle}</h4>
                 <div class="gift__details">
                     <p>Klein Beetje info over le film</p>
                 </div>
