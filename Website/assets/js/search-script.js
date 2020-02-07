@@ -13,9 +13,7 @@ function movieDisplay(movie) {
             div.innerHTML += `
             <div class="col-12 col-sm-6">
             <div class="gift__img col-12"><img src="${filmImg}">
-                <div class="gift__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                    class="fa fa-star"></i><i class="fa fa-star fa-star-half-o"></i><i
-                    class="fa fa-star fa-star-o"></i><span class="gift__rating-number">921</span></div>
+                <div class="gift__rating"></div>
             </div>
             <div class="gift__info col-12">
                 <h4 class="gift__name">${filmTitle}</h4>
