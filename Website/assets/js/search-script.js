@@ -8,7 +8,7 @@ function movieDisplay(movie) {
     let div = document.querySelector(".gift");
 
 
-    if (!movie["response"] == "False") {
+    if (movie["Response"] ==  "True") {
         if (searchMethod == "s") {
             movie.Search.forEach(item => {
                 console.log("Item", item);
@@ -35,7 +35,7 @@ function movieDisplay(movie) {
         if (searchMethod == "t") {
             console.log(movie["Title"]);
         }
-    } else {
+    } if(movie["Response"] == "False") {
         div.innerHTML = "No movies found!";
     }
 
