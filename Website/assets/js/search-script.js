@@ -40,6 +40,8 @@ function movieDisplay(movie) {
 
 function search() {
     let input = document.querySelector(".form-control").value;
+    let div = document.querySelector(".gift");
+    div.innerHTML = "";
     searchName = input;
     searchMethod = "s";
     api()
