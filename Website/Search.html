@@ -23,12 +23,21 @@
         </div>
         </div>
     </nav>
-    <form class="search-form">
+<!--    <form class="search-form">-->
         <div class="input-group">
-            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input class="form-control" type="text" placeholder="I am looking for..">
-            <div class="input-group-append"><button onclick="search()" class="btn btn-light" type="button">Search </button></div>
+            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input id="SearchRequest" class="form-control" type="text" placeholder="I am looking for..">
+            <div class="input-group-append"><button onclick="search()" class="btn btn-light" id="SearchButton" type="button">Search </button></div>
+            <script>
+                var input = document.getElementById("SearchRequest");
+                input.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("SearchButton").click();
+                }
+                });
+            </script>
         </div>
-    </form>
+<!--    </form>-->
     <div class="gift row gift--double no-border">
     </div>
     <footer>
