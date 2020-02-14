@@ -4,7 +4,6 @@ let searchMethod = "t";
 let check = false;
 
 function movieDisplay(movie) {
-    console.log("movies", movie);
     let div = document.querySelector(".gift");
 
     if (movie["Response"] ==  "True") {
@@ -48,7 +47,6 @@ function search() {
     searchMethod = "s";
     api()
     check = true;
-    console.log(input);
 }
 
 

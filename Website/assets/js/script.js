@@ -4,7 +4,6 @@ let searchMethod = "t";
 let moviesFront = ["Frozen", "Spongebob", "das boot", "Robots", "sex and the city", "Ready player one"];
 
 function movieDisplay(movie) {
-    console.log("Item", movie);
     let div = document.querySelector(".product-list");
     let movieTitle = movie["Title"];
     let movieImg = movie["Poster"];
@@ -39,7 +38,6 @@ function movieDisplay(movie) {
 
 function search() {
     let input = document.querySelector(".form-control").value;
-    console.log(input);
 }
 
 function api() {
