@@ -1,4 +1,0 @@
-[0213/123149.790:ERROR:process_info.cc(329)] VirtualQueryEx: Toegang geweigerd. (0x5)
-[0213/123149.792:ERROR:process_info.cc(556)] ReadMemoryInfo failed
-[0213/123149.792:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
-[0213/123149.792:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Er is geprobeerd toegang te krijgen tot een proces dat wordt afgesloten. (0xc000010a)
