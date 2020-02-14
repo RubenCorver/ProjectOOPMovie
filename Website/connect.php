@@ -1,14 +1,15 @@
 <?php
-         $dbhost = 'remotemysql.com:3036';
-         $dbuser = 'aQ4VHAUFSM';
-         $dbpass = 'L8fuvCAclt';
-         $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+$dbServerName = "remotemysql.com:3306";
+$dbUsername = "aQ4VHAUFSM";
+$dbPassword = "L8fuvCAclt";
+$dbName = "aQ4VHAUFSM";
 
-         if(! $conn ) {
-            die('Could not connect: ' . mysqli_error());
-         }
-         echo 'Connected successfully';
-         mysqli_select_db( 'aQ4VHAUFSM' );
+// create connection
+$conn = new mysqli($dbServerName, $dbUsername, $dbPassword, $dbName);
 
-         mysqli_close($conn);
-      ?>
+// check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+?>
