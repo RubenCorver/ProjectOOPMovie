@@ -70,4 +70,11 @@ function api() {
 
 window.onload = function () {
     api()
+    let input = document.getElementById("SearchRequest");
+    input.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("SearchButton").click();
+        }
+    });
 }
