@@ -1,6 +1,6 @@
 <?php
 
-define('DB_HOST', 'remotemysql.com');
+define('DB_HOST', 'remotemysql.com:3036');
 define('DB_NAME', 'aQ4VHAUFSM');
 define('DB_USER', 'aQ4VHAUFSM');
 define('DB_PASSWORD', 'L8fuvCAclt');
@@ -22,3 +22,4 @@ else
 {
 echo "Unknown Error!"
 }
+?>

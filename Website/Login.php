@@ -1,6 +1,6 @@
 <?php
 
-$host="remotemysql.com";
+$host="remotemysql.com:3036";
 $username="aQ4VHAUFSM";
 $password="L8fuvCAclt";
 $db_name="aQ4VHAUFSM";
@@ -28,3 +28,4 @@ if($count==1){
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
 }
+?>
