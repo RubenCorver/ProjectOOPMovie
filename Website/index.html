@@ -26,19 +26,12 @@
         </div>
         </div>
     </nav>
+        <form class="search-form">
         <div class="input-group">
             <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input id="SearchRequest" class="form-control" type="text" placeholder="I am looking for..">
             <div class="input-group-append"><button onclick="search()" class="btn btn-light" id="SearchButton" type="button">Search </button></div>
-            <script>
-                var input = document.getElementById("SearchRequest");
-                input.addEventListener("keyup", function(event) {
-                if (event.keyCode === 13) {
-                event.preventDefault();
-                document.getElementById("SearchButton").click();
-                }
-                });
-            </script>
         </div>
+        </form>
     <div class="container">
         <div class="row product-list dev">
             <div class="col-sm-6 col-md-4 product-item animation-element slide-top-left">
