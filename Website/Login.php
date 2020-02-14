@@ -17,9 +17,9 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Wishlist.html">WishList</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Search.html">Search</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Wishlist.php">WishList</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Search.php">Search</a></li>
                 </ul>
         </div>
         </div>
@@ -30,7 +30,7 @@
                 <div class="form-box">
                     <form method="post" action="Login2.php">
                         <fieldset>
-                            <legend>Sign in</legend><img id="avatar" class="avatar round" src="assets/img/avatar.png"><input class="form-control" type="text" id="username" name="username" placeholder="username"><input class="form-control" type="password" id="password" name="password" placeholder="password"><button class="btn btn-primary btn-block" id="login" value="login" type="submit">LOGIN </button><a href="Register.html"><button class="btn btn-primary btn-block" id="register" value="register" type="button">REGISTER </button></a></fieldset>
+                            <legend>Sign in</legend><img id="avatar" class="avatar round" src="assets/img/avatar.png"><input class="form-control" type="text" id="username" name="username" placeholder="username"><input class="form-control" type="password" id="password" name="password" placeholder="password"><button class="btn btn-primary btn-block" id="login" value="login" type="submit">LOGIN </button><a href="Register.php"><button class="btn btn-primary btn-block" id="register" value="register" type="button">REGISTER </button></a></fieldset>
                     </form>
                 </div>
             </div>
@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4 footer-navigation">
                     <h3><a href="#">OOP<span>Movie </span></a></h3>
-                    <p class="links"><a href="index.html">Home</a><strong> · </strong><a href="Wishlist.html">WishList</a><strong> · </strong><a href="Search.html">Search</a><strong> · </strong></strong><a href="#">Contact</a></p>
+                    <p class="links"><a href="index.php">Home</a><strong> · </strong><a href="Wishlist.php">WishList</a><strong> · </strong><a href="Search.php">Search</a><strong> · </strong><a href="#">Contact</a></p>
                     <p
                         class="company-name">OOP Movie Ruben & Nino © 2020 </p>
                 </div>

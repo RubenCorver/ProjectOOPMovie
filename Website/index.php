@@ -19,9 +19,9 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="Search.html">Search</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Wishlist.html">WishList</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Login.html">Login</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="Search.php">Search</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Wishlist.php">WishList</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Login.php">Login</a></li>
                 </ul>
         </div>
         </div>
@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4 footer-navigation">
                     <h3><a href="#">OOP<span>Movie </span></a></h3>
-                    <p class="links"><a href="Wishlist.html">WishList</a><strong> · </strong><a href="Search.html">Search</a><strong> · </strong><a href="Login.html">Login</a><strong> · </strong></strong><a href="#">Contact</a></p>
+                    <p class="links"><a href="Wishlist.php">WishList</a><strong> · </strong><a href="Search.php">Search</a><strong> · </strong><a href="Login.php">Login</a><strong> · </strong><a href="#">Contact</a></p>
                     <p
                         class="company-name">OOP Movie Ruben & Nino © 2020 </p>
                 </div>
