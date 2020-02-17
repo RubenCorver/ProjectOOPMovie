@@ -22,8 +22,8 @@ function movieDisplay(movie) {
             <div class="gift__info col-12">
                 <h4>${movieTitle}</h4>
                 <div class="gift__bottom row">
-                    <div class="gift__cta-wrap col-12"><a class="flux_cta gift__cta" target="_blank"
-                        href="#">WatchNow!</a><a class="flux_cta gift__cta" target="_blank" href="#">Add To
+                    <div class="gift__cta-wrap col-12"><a class="flux_cta gift__cta"
+                        href="Movie.php">WatchNow!</a><a class="flux_cta gift__cta" href="Wishlist.php">Add To
                         WishList!</a><span class="gift__cta-note"></span></div>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ let searchMethod = "t";
 let moviesFront = ["Frozen"];
 
 function movieDisplay(movie) {
-    let div = document.querySelector(".test");
+    let div = document.querySelector(".movie");
     let movieTitle = movie["Title"];
     let movieImg = movie["Poster"];
     let movieYear = movie["Year"];

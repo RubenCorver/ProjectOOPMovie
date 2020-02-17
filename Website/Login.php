@@ -24,8 +24,8 @@
         </div>
         </div>
     </nav>
-    <div class="container full-height">
-        <div class="row flex center v-center full-height">
+    <div class="container">
+        <div class="row flex center v-center ">
             <div class="col-8 col-sm-4">
                 <div class="form-box">
                     <form method="post" action="Login2.php">
@@ -37,7 +37,7 @@
         </div>
     </div>
         <footer>
-            <div class="row">
+            <div class="row-footer">
                 <div class="col-sm-6 col-md-4 footer-navigation">
                     <h3><a href="#">OOP<span>Movie </span></a></h3>
                     <p class="links"><a href="index.php">Home</a><strong> · </strong><a href="Wishlist.php">WishList</a><strong> · </strong><a href="Search.php">Search</a><strong> · </strong><a href="#">Contact</a></p>
