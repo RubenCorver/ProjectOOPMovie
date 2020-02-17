@@ -1,12 +1,12 @@
-<?php
+<?php 
 session_start();
- 
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  header("location: index.php");
-  exit;
-}
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    header("Location: index.php");
+}     
+     
 require_once "connect.php";
- 
+
 $username = $password = "";
 $username_err = $password_err = "";
  
@@ -23,8 +23,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else{
         $password = trim($_POST["password"]);
     }
-        if(empty($username_err) && empty($password_err)){
-            
+    
+    if(empty($username_err) && empty($password_err)){
         $sql = "SELECT iduser, username, password FROM user WHERE username = ?";
         
         if($stmt = mysqli_prepare($conn, $sql)){
@@ -34,7 +34,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             if(mysqli_stmt_execute($stmt)){
                 mysqli_stmt_store_result($stmt);
-                    if(mysqli_stmt_num_rows($stmt) == 1){                    
+                
+                if(mysqli_stmt_num_rows($stmt) == 1){                    
                     mysqli_stmt_bind_result($stmt, $iduser, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
@@ -59,6 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }
+    
     mysqli_close($conn);
 }
 ?>

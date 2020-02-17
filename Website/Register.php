@@ -84,7 +84,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <body>
         <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
-            <div class="container-fluid"><a class="navbar-brand" href="#"><i class="icon ion-ios-infinite" id="brand-logo"></i></a>
+            <div class="container-fluid"><a class="navbar-brand" href="index.php"><i class="icon ion-ios-infinite" id="brand-logo"></i></a>
                 <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
@@ -120,6 +120,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 </div>
                                 <button class="btn btn-primary btn-block" id="submit" value="submit" type="submit">REGISTER </button>
                             </fieldset>
+                             <p>Already have an account? <a href="login.php">Login here</a>.</p>
                         </form>
                     </div>
                 </div>

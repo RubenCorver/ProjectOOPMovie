@@ -5,7 +5,6 @@ let check = false;
 
 function movieDisplay(movie) {
     let div = document.querySelector(".gift");
-
     if (movie["Response"] ==  "True") {
         if (searchMethod == "s") {
             movie.Search.forEach(item => {

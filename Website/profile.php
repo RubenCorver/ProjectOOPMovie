@@ -1,12 +1,13 @@
+<?php
+session_start();
+ 
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
 
 <!DOCTYPE html>
-<?php
-    session_start();
-    if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false){
-        header("location: Login.php
-        ");
-    }
-?>
 <html>
 
 <head>
@@ -22,7 +23,7 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
-        <div class="container-fluid"><a class="navbar-brand" href="#"><i class="icon ion-ios-infinite" id="brand-logo"></i></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="index.php"><i class="icon ion-ios-infinite" id="brand-logo"></i></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
@@ -40,9 +41,10 @@
             </div>
         </div>
         <form>
+            <div class="side-row">
             <div class="form-row profile-row">
                 <div class="col-md-8">
-                    <h1>{Username}'s Profile</h1>
+                    <h1>Welcome <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b></h1>
                     <hr>
                     <div class="form-row">
                         <div class="col-sm-12 col-md-6">
@@ -67,7 +69,11 @@
                     </div>
                 </div>
             </div>
+                </div>
         </form>
+    </div>
+    <div class="void">
+    
     </div>
     <footer>
         <div class="row">
