@@ -26,13 +26,13 @@
         </div>
         </div>
     </nav>
-    <form class="search-form">
-        <div class="input-group">
-            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input class="form-control" type="text" placeholder="I am looking for..">
-            <div class="input-group-append"><button class="btn btn-light" type="button">Search </button></div>
+        <div class="form">
+            <div class="input-group">
+                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input class="form-control" type="text" placeholder="I am looking for..">
+                <div class="input-group-append"><button class="btn btn-light" type="button">Search </button></div>
+            </div>
         </div>
-    </form>
-        <div class="test">
+        <div class="movie">
     
         </div>
         <footer>
