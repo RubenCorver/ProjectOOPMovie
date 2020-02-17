@@ -30,7 +30,7 @@
                 <div class="form-box">
                     <form method="post" action="Login2.php">
                         <fieldset>
-                            <legend>Sign in</legend><img id="avatar" class="avatar round" src="assets/img/avatar.png"><input class="form-control" type="text" id="username" name="username" placeholder="username"><input class="form-control" type="password" id="password" name="password" placeholder="password"><button class="btn btn-primary btn-block" id="login" value="login" type="submit">LOGIN </button><a href="Register.php"><button class="btn btn-primary btn-block" id="register" value="register" type="button">REGISTER </button></a></fieldset>
+                            <legend>Sign in</legend><img id="avatar" class="avatar round" src="assets/img/avatar.png"><input class="form-control" type="text" id="username" name="username" placeholder="username" required><input class="form-control" type="password" id="password" name="password" placeholder="password" required><button class="btn btn-primary btn-block" id="login" value="login" type="submit">LOGIN </button><a href="Register.php"><button class="btn btn-primary btn-block" id="register" value="register" type="button">REGISTER </button></a></fieldset>
                     </form>
                 </div>
             </div>
@@ -41,8 +41,7 @@
                 <div class="col-sm-6 col-md-4 footer-navigation">
                     <h3><a href="#">OOP<span>Movie </span></a></h3>
                     <p class="links"><a href="index.php">Home</a><strong> · </strong><a href="Wishlist.php">WishList</a><strong> · </strong><a href="Search.php">Search</a><strong> · </strong><a href="#">Contact</a></p>
-                    <p
-                        class="company-name">OOP Movie Ruben & Nino © 2020 </p>
+                    <p class="company-name">OOP Movie Ruben & Nino © 2020 </p>
                 </div>
                 <div class="col-sm-6 col-md-4 footer-contacts">
                     <div><span class="fa fa-map-marker footer-contacts-icon"> </span>

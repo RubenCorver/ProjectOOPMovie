@@ -32,15 +32,9 @@
             <div class="input-group-append"><button class="btn btn-light" type="button">Search </button></div>
         </div>
     </form>
-    <div class="overlayWrapper"><img class="img-fluid" src="http://www.placehold.it/1920x655">
-        <div class="centered">
-            <h1 class="ccontainer">Film Title</h1>
+        <div class="test">
+    
         </div>
-    </div>
-    <div class="row"><div class="col-md-8 d-block item fcard" id="fcard1" style=" margin-left: 20em;margin-top: 10px;margin-bottom: 10px;">
-    <h3 style="text-align: center;"><br/>Feature1</h3><br/>
-    <p>Lorem ipsum dolor sit amet, consectetur adispicing elit. Aenean id purus ipsum, Aliquam ac orci eleifend, aliquet felis nec.</p>
-</div></div>
         <footer>
             <div class="row">
                 <div class="col-sm-6 col-md-4 footer-navigation">
@@ -69,6 +63,7 @@
         </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/movie-script.js"></script>
 </body>
 
 </html>
