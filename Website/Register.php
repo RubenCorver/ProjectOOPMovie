@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
 
             $param_username = $username;
-            $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+            $param_password = password_hash($password, PASSWORD_DEFAULT);
 
             if(mysqli_stmt_execute($stmt)){
                 header("location: login.php");
@@ -68,11 +68,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
-    <!DOCTYPE html>
-    <html>
 
-    <head>
-        <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+            <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>OOP Register</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
@@ -80,10 +82,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="assets/css/stylesLogin.min.css">
-    </head>
-
-    <body>
-        <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
+</head>
+<body>
+            <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
             <div class="container-fluid"><a class="navbar-brand" href="index.php"><i class="icon ion-ios-infinite" id="brand-logo"></i></a>
                 <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -96,11 +97,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
             </div>
         </nav>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="container">
             <div class="row flex center v-center ">
                 <div class="col-8 col-sm-4">
                     <div class="form-box">
-                        <form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="post">
                             <fieldset>
                                 <legend>Register</legend><img id="avatar" class="avatar round" src="assets/img/avatar.png">
                                 <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -121,12 +122,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 <button class="btn btn-primary btn-block" id="submit" value="submit" type="submit">REGISTER </button>
                             </fieldset>
                              <p>Already have an account? <a href="login.php">Login here</a>.</p>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
+        </form> 
+     <footer>
             <div class="row-footer">
                 <div class="col-sm-6 col-md-4 footer-navigation">
                     <h3><a href="#">OOP<span>Movie </span></a></h3>
@@ -153,6 +154,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    </body>
-
-    </html>
+</body>
+</html>
