@@ -92,16 +92,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Home</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="Wishlist.php">WishList</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="Search.php">Search</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="Login.php">Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
         <div class="container">
             <div class="row flex center v-center ">
                 <div class="col-8 col-sm-4">
                     <div class="form-box">
+                                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                             <fieldset>
                                 <legend>Register</legend><img id="avatar" class="avatar round" src="assets/img/avatar.png">
                                 <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -122,11 +122,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 <button class="btn btn-primary btn-block" id="submit" value="submit" type="submit">REGISTER </button>
                             </fieldset>
                              <p>Already have an account? <a href="login.php">Login here</a>.</p>
+                                            </form> 
                     </div>
                 </div>
             </div>
         </div>
-        </form> 
+
      <footer>
             <div class="row-footer">
                 <div class="col-sm-6 col-md-4 footer-navigation">

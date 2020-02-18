@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -21,7 +25,17 @@
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="Search.php">Search</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="Wishlist.php">WishList</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Login.php">Login</a></li>
+                        <?php
+                    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+                        ?>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Login.php">Login</a></li>
+                        <?php }
+                    else {
+                        ?>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Logout.php">Logout</a></li>
+                        <?php
+                        }
+                        ?>
                 </ul>
         </div>
         </div>
