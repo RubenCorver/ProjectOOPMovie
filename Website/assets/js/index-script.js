@@ -4,11 +4,13 @@ let searchMethod = "t";
 let moviesFront = ["Frozen", "Spongebob", "das boot", "Robots", "sex and the city", "Ready player one"];
 
 function movieDisplay(movie) {
+    console.log(movie);
     let div = document.querySelector(".product-list");
     let movieTitle = movie["Title"];
     let movieImg = movie["Poster"];
     let movieYear = movie["Year"];
     let movieDesc = movie["Plot"];
+    let movieId = movie["imdbID"];
     let movieRating = movie["Ratings"][0]["Value"];
     div.innerHTML += `
         <div class="col-sm-6 col-md-4 product-item animation-element slide-top-left">
@@ -28,7 +30,7 @@ function movieDisplay(movie) {
                         <p class="product-description">${movieDesc}</p>
                         <div class="row">
                             <div class="col-6"><button class="btn btn-light" type="button">Watch Now!</button></div>
-                            <div class="col-6"><button class="btn btn-light" type="button">WishList!</button></div>
+                            <div class="col-6"><button class="${movieId} btn btn-light" type="button">WishList!</button></div>
                         </div>
                     </div>
                 </div>

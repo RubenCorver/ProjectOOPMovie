@@ -13,6 +13,7 @@ function movieDisplay(movie) {
                 let movieTitle = item["Title"];
                 let movieImg = item["Poster"];
                 let movieYear = item["Year"];
+                let movieId = item["imdbID"];
                 div.innerHTML += `
             <div class="col-12 col-sm-6">
             <div class="gift__img col-12"><img src="${movieImg}">
@@ -22,7 +23,7 @@ function movieDisplay(movie) {
                 <h4>${movieTitle}</h4>
                 <div class="gift__bottom row">
                     <div class="gift__cta-wrap col-12"><a class="flux_cta gift__cta"
-                        href="Movie.php">WatchNow!</a><a class="flux_cta gift__cta" href="Wishlist.php">Add To
+                        href="Movie.php">WatchNow!</a><a class="${movieId} flux_cta gift__cta" href="Wishlist.php">Add To
                         WishList!</a><span class="gift__cta-note"></span></div>
                     </div>
                 </div>
