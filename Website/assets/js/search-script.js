@@ -8,8 +8,6 @@ function movieDisplay(movie) {
     if (movie["Response"] ==  "True") {
         if (searchMethod == "s") {
             movie.Search.forEach(item => {
-                console.log("Item", item);
-
                 let movieTitle = item["Title"];
                 let movieImg = item["Poster"];
                 let movieYear = item["Year"];

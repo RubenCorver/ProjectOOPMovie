@@ -40,12 +40,6 @@ session_start();
         </div>
         </div>
     </nav>
-        <form class="search-form">
-        <div class="input-group">
-            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input id="SearchRequest" class="form-control" type="text" placeholder="I am looking for..">
-            <div class="input-group-append"><button onclick="search()" class="btn btn-light" id="SearchButton" type="button">Search </button></div>
-        </div>
-        </form>
     <div class="container">
         <div class="row product-list dev">
             

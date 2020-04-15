@@ -1,10 +1,9 @@
 let key = "1d78fa8";
-let searchName = "Winnie the pooh";
+let searchName = "";
 let searchMethod = "t";
 let moviesFront = ["Frozen", "Spongebob", "das boot", "Robots", "sex and the city", "Ready player one"];
 
 function movieDisplay(movie) {
-    console.log(movie);
     let div = document.querySelector(".product-list");
     let movieTitle = movie["Title"];
     let movieImg = movie["Poster"];
@@ -36,10 +35,6 @@ function movieDisplay(movie) {
                 </div>
             </div>
         </div>`
-}
-
-function search() {
-    let input = document.querySelector(".form-control").value;
 }
 
 function api() {
